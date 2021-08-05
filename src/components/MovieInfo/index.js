@@ -1,4 +1,5 @@
 import { Wrapper, Content, Text } from "./MovieInfo.styles.js";
+import PropTypes from "prop-types";
 import Thumb from "../Thumb/index.js";
 
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../../Config.js";
@@ -36,5 +37,9 @@ const MovieInfo = ({ movie }) => (
     </Content>
   </Wrapper>
 );
+
+MovieInfo.propTypes = {
+  movie: PropTypes.object,
+};
 
 export default MovieInfo;
